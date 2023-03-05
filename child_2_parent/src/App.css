@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.App_color_container {
+  width: 333px;
+  height: 333px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+#input {
+  margin-top: 33px;
+}
