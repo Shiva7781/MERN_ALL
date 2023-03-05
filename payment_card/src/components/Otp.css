@@ -1,0 +1,22 @@
+.otp_div {
+  border: 1px solid red;
+  height: 200px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.otp_div input {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.otp_div input:focus {
+  background-color: lightblue;
+}

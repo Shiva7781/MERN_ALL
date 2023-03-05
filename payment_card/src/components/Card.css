@@ -1,0 +1,202 @@
+.main_div {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 70%;
+  margin: 150px auto auto auto;
+}
+
+.left_div {
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 400px;
+  margin: auto;
+}
+
+.payment_card {
+  /* border: 1px solid red; */
+  width: 25%;
+  height: 240px;
+  margin: 50px auto auto 30px;
+  z-index: 1;
+  background-color: crimson;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.7s ease-out;
+}
+
+.payment_card h1 {
+  margin-left: 277px;
+}
+
+.card_number {
+  /* border: 1px solid blue; */
+  display: inline-block;
+  margin: 10px 0 20px 50px;
+  font-size: 25px;
+}
+
+.name_and_date {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* border: 1px solid blue; */
+  width: 70%;
+  margin: 0px 0 20px 50px;
+}
+
+.name_date > span {
+  font-size: 13px;
+  /* margin: 0 0 20px 0; */
+}
+
+.user_name {
+  font-size: 15px;
+  margin: 5px 0 0 0;
+}
+
+.expry_date {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+}
+
+.expry_date > span {
+  font-size: 13px;
+}
+
+.payment_card_back {
+  width: 25%;
+  height: 240px;
+  margin: 50px auto auto 30px;
+  z-index: -1;
+  background-color: crimson;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-out;
+}
+
+.payment_card_back > h1 {
+  text-align: center;
+  margin: 30px 0 0 0;
+  font-size: 40px;
+  padding: 15px 0 5px 230px;
+}
+
+.black_stripe {
+  background-color: rgb(17, 16, 16);
+  height: 30px;
+  margin: 20px 0 0 0;
+}
+
+.enter_cvv {
+  height: 35px;
+  width: 80%;
+  background-color: white;
+  margin: 20px auto auto auto;
+  color: black;
+  text-align: end;
+}
+
+.background_div {
+  /* border: 1px solid crimson; */
+  width: 24%;
+  margin: 90px auto auto 100px;
+  height: 230px;
+  border-radius: 10px;
+  background-color: rgb(221, 217, 217);
+  position: absolute;
+  z-index: -123;
+}
+
+/* Right */
+.right_div {
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 400px;
+  margin: 10px 0 0 30px;
+  padding: 5px;
+}
+
+.right_div > input {
+  margin: 10px;
+}
+
+.hodler_name_input_div,
+.card_number_input_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hodler_name_input_div > span,
+.card_number_input_div > span {
+  font-size: 13px;
+}
+
+.hodler_name_input_div > input,
+.card_number_input_div > input {
+  border: none;
+  height: 30px;
+  margin: 5px 0 0 0;
+  width: 88%;
+  border-bottom: 2px solid crimson;
+}
+
+.expry_date_input {
+  display: flex;
+  width: 88%;
+  justify-content: space-evenly;
+  /* border: 1px solid blue; */
+}
+
+.expiry_month,
+.expiry_year {
+  font-size: 13px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.cvv {
+  font-size: 13px;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.expiry_month > input,
+.expiry_year > input,
+.cvv > input {
+  height: 30px;
+  margin: 5px 3px 0 0;
+  /* padding: 5px; */
+  border: none;
+  border-bottom: 2px solid crimson;
+}
+
+.amount_div {
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.amount_div span {
+  color: rgb(202, 37, 70);
+}
+
+.pay_now_btn {
+  width: 150px;
+  height: 40px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
