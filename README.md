@@ -1,3 +1,19 @@
+# Preparation
+
+```
+MERN_ALL
+```
+
+## API endpoints
+
+`/api/register` &nbsp; Post - Register user.
+
+`/api/login` &nbsp; Post - Login user.
+
+`/api/profile` &nbsp; Get - User profile.
+
+`/api/users/{id}` &nbsp; Get - Single user.
+
 # All-MERN-Projects
 
 ## 1) chat_app https://github.com/Shiva7781/chat_app &nbsp; https://chat-app-shiva7781.netlify.app/
