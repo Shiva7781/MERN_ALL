@@ -1,10 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import Accessibility from "./Accessibility";
 
 const Ul = styled.ul`
   list-style: none;
   display: flex;
+  align-items: center;
   flex-flow: row nowrap;
 
   li {
@@ -27,7 +29,7 @@ const Ul = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0d2538;
+    background-color: #12426a;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
@@ -45,23 +47,20 @@ const Ul = styled.ul`
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open}>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/about">About Us</NavLink>
-      </li>
-      <li>
-        <NavLink to="/contact">Contact Us</NavLink>
-      </li>
-      <li>
-        <NavLink to="/login">Sign In</NavLink>
-      </li>
-      <li>
-        <NavLink to="/signup">Sign Up</NavLink>
-      </li>
-    </Ul>
+    <>
+      <Ul open={open}>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About Us</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">Contact Us</NavLink>
+        </li>
+        <Accessibility />
+      </Ul>
+    </>
   );
 };
 
