@@ -17,6 +17,10 @@ const Ul = styled.ul`
     text-decoration: none;
   }
 
+  li a:hover {
+    border-bottom: 2px solid #2ecc71;
+  }
+
   li a.active {
     font-weight: bold;
   }
