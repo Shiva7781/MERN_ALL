@@ -8,9 +8,10 @@ const Ul = styled.ul`
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
+  margin: 0;
 
   li {
-    padding: 18px 10px;
+    padding: 7px;
   }
 
   li a {
@@ -53,10 +54,10 @@ const RightNav = ({ open }) => {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About Us</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <Accessibility />
       </Ul>

@@ -4,6 +4,11 @@ import styled from "styled-components";
 const AccessibilityContainer = styled.div`
   display: flex;
   margin-left: 10px;
+
+  @media (max-width: 768px) {
+    color: #fff;
+    margin: 1rem 0;
+  }
 `;
 
 const RegisterButton = styled.button`
@@ -11,7 +16,6 @@ const RegisterButton = styled.button`
   outline: 0;
   padding: 8px 1em;
   color: #fff;
-  font-size: 13px;
   font-weight: 600;
   border-radius: 20px;
   background-color: #6adf76;
