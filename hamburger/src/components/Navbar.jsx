@@ -35,10 +35,6 @@ const Input = styled.input`
   outline: none;
   min-width: 40%;
   padding: 11px;
-
-  @media (max-width: 768px) {
-    margin: 1rem;
-  }
 `;
 
 const Navbar = () => {
