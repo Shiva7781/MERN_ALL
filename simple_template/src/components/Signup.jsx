@@ -9,10 +9,10 @@ const Signup = () => {
   const submitData = (e) => {
     e.preventDefault();
 
-    const EmailE = Email.current.value;
-    const PasswordE = Password.current.value;
+    const email = Email.current.value;
+    const password = Password.current.value;
 
-    setUserData({ email: EmailE, password: PasswordE });
+    setUserData({ email, password });
   };
 
   const handleSignup = () => {
@@ -23,6 +23,7 @@ const Signup = () => {
     <div className="signup_page">
       <form className="form" onSubmit={submitData}>
         <h3>Signup</h3>
+
         <div>
           <label>
             <input
@@ -33,6 +34,7 @@ const Signup = () => {
             />
           </label>
         </div>
+
         <div>
           <label>
             <input
@@ -43,12 +45,14 @@ const Signup = () => {
             />
           </label>
         </div>
+
         <div>
           <button type="submit" onClick={handleSignup}>
             SUBMIT
           </button>
         </div>
       </form>
+
       <div>
         <Link className="message" to="/">
           Already have an account? Login
