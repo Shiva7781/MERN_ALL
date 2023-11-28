@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { nanoid } from "nanoid";
 
-const socket = io.connect("http://localhost:7781/");
+const socket = io.connect("https://socket-y70f.onrender.com/");
 const userName = nanoid(7);
 
 function App() {
