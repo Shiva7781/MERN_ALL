@@ -1,12 +1,18 @@
 import "./App.css";
 import { useEffect } from "react";
 import { messaging } from "./firebase";
-import { getToken } from "firebase/messaging";
+import { getToken, onMessage } from "firebase/messaging";
 
 function App() {
   useEffect(() => {
     // Req user for notification permission
     requestPermission();
+
+    //when user's tab is on then this function will show the notification
+    onMessage(messaging, (payload) => {
+      // console.log("Message received. ", payload);
+      alert(payload.notification.title);
+    });
   }, []);
 
   const requestPermission = async () => {

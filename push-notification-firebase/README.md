@@ -2,7 +2,10 @@
 
 URL: https://fcm.googleapis.com/fcm/send <br/>
 Method: POST <br/>
-Headers: Authorization: key=YOUR_SERVER_KEY &nbsp; &nbsp; Content-Type: application/json
+Headers: Authorization: key=YOUR_SERVER_KEY &nbsp; &nbsp; Content-Type: application/json <br/>
+Firebase Cloud Messaging API (V1) Enabled <br/>
+Cloud Messaging API (Legacy) Enabled <br/>
+vapidKey=Key pair (Web Push certificates)
 
 - Go to the Firebase Console: https://console.firebase.google.com/ <br/>
 - Select your project. <br/>
